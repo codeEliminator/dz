@@ -3,6 +3,7 @@ import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom'
 import Home from '../Home/Home';
 import Popular from '../Popular/Popular';
 import Battle from '../Battle/Battle';
+import Results from '../Results/Results';
 import  Nav from '../../Nav';
 const router = createBrowserRouter([
   {
@@ -14,11 +15,15 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/popular",
+        path: "popular",
         element: <Popular />
       },
       {
-        path: "/battle",
+        path: "battle/results",
+        element: <Results />
+      },
+      {
+        path: "battle",
         element: <Battle />
       }
     ]
